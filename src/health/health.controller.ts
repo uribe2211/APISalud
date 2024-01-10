@@ -12,7 +12,7 @@ export class HealthController {
   @HealthCheck()
   check() {
     return this.health.check([
-      () => this.http.pingCheck('El Claustro', 'https://redclaustro.ucsj.edu.mx'),
+      () => this.http.pingCheck('My Local host', 'http://localhost:3001'),
     ]);
   }
 }
